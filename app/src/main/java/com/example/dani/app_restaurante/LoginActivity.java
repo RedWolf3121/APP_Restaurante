@@ -6,38 +6,47 @@ import android.database.sqlite.SQLiteDatabase;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
     EditText et1,et2;
-    private Cursor fila;
+    Button login;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
-    }
-    public void ingresar(View v){
-        DatabaseHelper admin=new DatabaseHelper(this,"instituto",null,1);
-        SQLiteDatabase db=admin.getWritableDatabase();
-        String usuario=et1.getText().toString();
-        String contrasena=et2.getText().toString();
-        fila=db.rawQuery("select usuario,contrasena from usuarios where usuario='"+usuario+"' and contrasena='"+contrasena+"'",null);
 
-        if (fila.moveToFirst()){
-            String usua=fila.getString(0);
-            String pass=fila.getString(1);
-            if (usuario.equals(usua)&&contrasena.equals(pass)){
-                Intent ven=new Intent(this,MenuPrincipalActivity.class);
-                startActivity(ven);
-                et1.setText("");
-                et2.setText("");
+        et1= findViewById(R.id.usuario);
+        et2= findViewById(R.id.pasword);
+
+        login = findViewById(R.id.login);
+        login.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                login();
             }
+        });
+    }
 
-        }
-
-
+    public void login() {
+        DatabaseHelper admin = new DatabaseHelper(this,
+                "usuarios", null, 1);
+        SQLiteDatabase bd = admin.getWritableDatabase();
+        String usuario = et1.getText().toString();
+        Cursor fila = bd.rawQuery(
+                "select usuario,contraseña  from usuarios where usuario="+usuario+"",null);
+        if (fila.moveToFirst()) {
+            et1.setText(fila.getString(1));
+            et2.setText(fila.getString(2));
+        } else
+            Toast.makeText(this, "No existe una persona con ese usuario", Toast.LENGTH_SHORT).show();
+        bd.close();
+        Intent intent = new Intent(LoginActivity.this,MenuPrincipalActivity.class);
+        startActivity(intent);
 
     }
 }
