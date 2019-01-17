@@ -1,11 +1,140 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context=".Menus_CartaActivity"
-    tools:showIn="@layout/app_bar_menus__carta">
+    tools:showIn="@layout/app_bar_menus__carta"
+    android:orientation="vertical">
 
-</android.support.constraint.ConstraintLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_primeros"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="3dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="6dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/primerplato_muestra"
+                    android:scaleType="centerCrop"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Primero"
+                    android:paddingLeft="30dp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_segundos"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="3dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/segundoplato_muestra"
+                    android:scaleType="centerCrop"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Segundo"
+                    android:paddingLeft="30dp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_postres"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_margin="3dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/tarta"
+                    android:scaleType="centerCrop"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Postre"
+                    android:paddingLeft="30dp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                xmlns:card_view="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/card_Cafe"
+                android:layout_width="match_parent"
+                android:layout_height="180dp"
+                card_view:cardCornerRadius="4dp"
+                android:layout_marginLeft="3dp"
+                android:layout_marginBottom="6dp"
+                android:layout_marginRight="3dp"
+                android:layout_marginTop="3dp">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/cafe_muestra"
+                    android:scaleType="centerCrop"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="Cafe"
+                    android:paddingLeft="30dp"
+                    android:layout_gravity="bottom"
+                    android:textColor="@color/blanco"
+                    android:textStyle="bold"
+                    android:textSize="16dp"/>
+
+            </android.support.v7.widget.CardView>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>
