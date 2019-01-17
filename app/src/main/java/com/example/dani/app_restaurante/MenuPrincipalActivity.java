@@ -42,6 +42,14 @@ public class MenuPrincipalActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+        CardView mapa = (CardView) findViewById(R.id.card_mapa);
+        mapa.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPrincipalActivity.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override
