@@ -21,6 +21,10 @@
         <activity
             android:name=".MenuPrincipalActivity"
             android:label="@string/title_activity_menu_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Menus_CartaActivity"
+            android:label="@string/title_activity_menus__carta"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 

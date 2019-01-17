@@ -14,7 +14,9 @@
 
     <ImageView
         android:layout_width="match_parent"
-        android:layout_height="200dp" />
+        android:layout_height="200dp"
+        android:src="@drawable/slideshow1"
+        android:scaleType="centerCrop"/>
 
 
     <TableRow

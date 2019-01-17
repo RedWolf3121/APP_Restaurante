@@ -30,6 +30,14 @@ public class LoginActivity extends AppCompatActivity {
                 login();
             }
         });
+
+        findViewById(R.id.provisional).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(LoginActivity.this,MenuPrincipalActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     public void login() {

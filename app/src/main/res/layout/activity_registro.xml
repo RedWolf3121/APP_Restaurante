@@ -12,7 +12,7 @@
         android:id="@+id/usuario"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Usuario"/>
+        android:hint="Email"/>
 
     <EditText
         android:id="@+id/pasword"
@@ -26,6 +26,12 @@
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:hint="Repetir Contraseña"/>
+    <EditText
+        android:id="@+id/tel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:inputType="textPassword"
+        android:hint="Telefono"/>
 
     <Button
         android:id="@+id/registrarse"
