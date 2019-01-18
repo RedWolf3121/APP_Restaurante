@@ -1,4 +1,20 @@
 <resources>
+
+    <!-- Primeros Platos -->
+
+    <string name="p1">Patatas con chorizo</string>
+    <string name="p2">Empanadillas de atún con tomate</string>
+    <string name="p3">Enchiladas suizas</string>
+    <string name="p4">Rollitos de verduras y queso </string>
+    <string name="p5">Arroz negro con calamares</string>
+    <string name="p6">Ensaladilla de patata y gambas</string>
+    <string name="p7">Crema de marmitako </string>
+    <string name="p8">Croquetas de salmón</string>
+    <string name="p9">Fideos con verduras y costilla de cerdo</string>
+    <string name="p10">Pastel de puerros</string>
+
+    <!-- Principal App -->
+
     <string name="app_name">APP_Restaurante</string>
     <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
@@ -9,4 +25,6 @@
     <string name="action_settings">Settings</string>
     <string name="title_activity_menus__carta">Menus_CartaActivity</string>
     <string name="title_activity_maps">Map</string>
+    <string name="title_activity_carrito">CarritoActivity</string>
+    <string name="title_activity_primeros">PrimerosActivity</string>
 </resources>

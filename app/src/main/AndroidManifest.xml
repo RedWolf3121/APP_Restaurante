@@ -47,7 +47,15 @@
 
         <activity
             android:name=".MapsActivity"
-            android:label="@string/title_activity_maps"></activity>
+            android:label="@string/title_activity_maps" />
+        <activity
+            android:name=".CarritoActivity"
+            android:label="@string/title_activity_carrito"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".PrimerosActivity"
+            android:label="@string/title_activity_primeros"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

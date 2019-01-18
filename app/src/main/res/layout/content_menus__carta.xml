@@ -31,9 +31,9 @@
                 android:layout_marginTop="6dp">
 
                 <ImageView
+                    android:id="@+id/primero"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/primerplato_muestra"
                     android:scaleType="centerCrop"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"/>
@@ -58,9 +58,9 @@
                 android:layout_margin="3dp">
 
                 <ImageView
+                    android:id="@+id/segundo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/segundoplato_muestra"
                     android:scaleType="centerCrop"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"/>
@@ -85,9 +85,9 @@
                 android:layout_margin="3dp">
 
                 <ImageView
+                    android:id="@+id/postre"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/tarta"
                     android:scaleType="centerCrop"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"/>
@@ -115,9 +115,9 @@
                 android:layout_marginTop="3dp">
 
                 <ImageView
+                    android:id="@+id/cafe"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:src="@drawable/cafe_muestra"
                     android:scaleType="centerCrop"
                     android:paddingTop="8dp"
                     android:paddingBottom="8dp"/>

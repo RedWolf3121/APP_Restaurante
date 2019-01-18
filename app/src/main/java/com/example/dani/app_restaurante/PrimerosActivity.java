@@ -1,10 +1,8 @@
 package com.example.dani.app_restaurante;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.widget.CardView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -18,13 +16,13 @@ import android.widget.ImageView;
 
 import com.bumptech.glide.Glide;
 
-public class Menus_CartaActivity extends AppCompatActivity
+public class PrimerosActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menus__carta);
+        setContentView(R.layout.activity_primeros);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -38,27 +36,36 @@ public class Menus_CartaActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
         // cargar imagenes con glide
-        ImageView imgprimero = findViewById(R.id.primero);
-        Glide.with(this).load(R.drawable.primerplato_muestra).into(imgprimero);
+        ImageView p1 = findViewById(R.id.img1);
+        Glide.with(this).load(R.drawable.patatas_con_chorizo).into(p1);
 
-        ImageView imgsegundo = findViewById(R.id.segundo);
-        Glide.with(this).load(R.drawable.segundoplato_muestra).into(imgsegundo);
+        ImageView p2 = findViewById(R.id.img2);
+        Glide.with(this).load(R.drawable.empanadillas_de_atun_con_tomate).into(p2);
 
-        ImageView imgpostre = findViewById(R.id.postre);
-        Glide.with(this).load(R.drawable.tarta).into(imgpostre);
+        ImageView p3 = findViewById(R.id.img3);
+        Glide.with(this).load(R.drawable.enchiladas_suizas).into(p3);
 
-        ImageView imgcafe = findViewById(R.id.cafe);
-        Glide.with(this).load(R.drawable.cafe_muestra).into(imgcafe);
+        ImageView p4 = findViewById(R.id.img4);
+        Glide.with(this).load(R.drawable.rollitos_verdura).into(p4);
 
-        //onClick cardView realiza un intente a otraactivity
-        CardView primeros = (CardView) findViewById(R.id.card_primeros);
-        primeros.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Menus_CartaActivity.this, PrimerosActivity.class);
-                startActivity(intent);
-            }
-        });
+        ImageView p5 = findViewById(R.id.img5);
+        Glide.with(this).load(R.drawable.arroz_negro).into(p5);
+
+        ImageView p6 = findViewById(R.id.img6);
+        Glide.with(this).load(R.drawable.ensalada_patata).into(p6);
+
+        ImageView p7 = findViewById(R.id.img7);
+        Glide.with(this).load(R.drawable.crema_marmitako).into(p7);
+
+        ImageView p8 = findViewById(R.id.img8);
+        Glide.with(this).load(R.drawable.croquetas_de_salmon).into(p8);
+
+        ImageView p9 = findViewById(R.id.img9);
+        Glide.with(this).load(R.drawable.fideos_verdur).into(p9);
+
+        ImageView p10 = findViewById(R.id.img10);
+        Glide.with(this).load(R.drawable.pastel_puerros).into(p10);
+
     }
 
     @Override
@@ -74,7 +81,7 @@ public class Menus_CartaActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menus__carta, menu);
+        getMenuInflater().inflate(R.menu.primeros, menu);
         return true;
     }
 
