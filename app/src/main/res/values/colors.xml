@@ -7,4 +7,10 @@
     <color name="blanco">#ffffff</color>
     <color name="gris">#4b4848</color>
     <color name="veig">#fff9f9</color>
+    <color name="colorRL">#CD1FA594</color>
+    <color name="colorRLButton">#43000000</color>
+    <color name="colorRLText">#FFFFFF</color>
+
+
+
 </resources>

@@ -6,37 +6,59 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".RegistroActivity"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/colorRL"
+    android:padding="25dp">
 
     <EditText
-        android:id="@+id/usuario"
+        android:id="@+id/email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Email"/>
+        android:hint="Email"
+        android:layout_marginTop="30dp"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/colorRLText"
+        android:backgroundTint="@color/colorRLText"/>
 
     <EditText
         android:id="@+id/pasword"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="Contraseña"/>
+        android:hint="Contraseña"
+        android:layout_marginTop="12dp"
+        android:lines="1"
+        android:textColorHint="@color/colorRLText"
+        android:backgroundTint="@color/colorRLText"/>
     <EditText
         android:id="@+id/pasword2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
-        android:hint="Repetir Contraseña"/>
+        android:hint="Repetir Contraseña"
+        android:layout_marginTop="12dp"
+        android:lines="1"
+        android:textColorHint="@color/colorRLText"
+        android:backgroundTint="@color/colorRLText"/>
     <EditText
         android:id="@+id/tel"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="textPassword"
-        android:hint="Telefono"/>
+        android:inputType="phone"
+        android:hint="Telefono"
+        android:layout_marginTop="12dp"
+        android:lines="1"
+        android:textColorHint="@color/colorRLText"
+        android:backgroundTint="@color/colorRLText"/>
 
     <Button
         android:id="@+id/registrarse"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Crear Cuenta"/>
+        android:text="Crear Cuenta"
+        android:background="@color/colorRLButton"
+        android:layout_marginTop="60dp"
+        android:textColor="@color/colorRLText"
+        android:textStyle="bold"/>
 
 </LinearLayout>

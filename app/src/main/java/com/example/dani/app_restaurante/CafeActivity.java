@@ -1,10 +1,8 @@
 package com.example.dani.app_restaurante;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
-import android.support.v7.widget.CardView;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -14,17 +12,14 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
-import android.widget.ImageView;
 
-import com.bumptech.glide.Glide;
-
-public class Menus_CartaActivity extends AppCompatActivity
+public class CafeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_menus__carta);
+        setContentView(R.layout.activity_cafe);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
@@ -36,47 +31,6 @@ public class Menus_CartaActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
-
-        // cargar imagenes con glide
-        ImageView imgprimero = findViewById(R.id.primero);
-        Glide.with(this).load(R.drawable.primerplato_muestra).into(imgprimero);
-
-        ImageView imgsegundo = findViewById(R.id.segundo);
-        Glide.with(this).load(R.drawable.segundoplato_muestra).into(imgsegundo);
-
-        ImageView imgpostre = findViewById(R.id.postre);
-        Glide.with(this).load(R.drawable.tarta).into(imgpostre);
-
-        ImageView imgcafe = findViewById(R.id.cafe);
-        Glide.with(this).load(R.drawable.cafe_muestra).into(imgcafe);
-
-        //onClick cardView realiza un intente a otraactivity
-        CardView primeros = (CardView) findViewById(R.id.card_primeros);
-        primeros.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Menus_CartaActivity.this, PrimerosActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        CardView segundos = (CardView) findViewById(R.id.card_segundos);
-        segundos.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Menus_CartaActivity.this, SegundosActivity.class);
-                startActivity(intent);
-            }
-        });
-
-        CardView postres = (CardView) findViewById(R.id.card_postres);
-        postres.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(Menus_CartaActivity.this, PostresActivity.class);
-                startActivity(intent);
-            }
-        });
     }
 
     @Override
@@ -92,7 +46,7 @@ public class Menus_CartaActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menus__carta, menu);
+        getMenuInflater().inflate(R.menu.cafe, menu);
         return true;
     }
 

@@ -13,9 +13,35 @@
     <string name="p9">Fideos con verduras y costilla de cerdo</string>
     <string name="p10">Pastel de puerros</string>
 
+    <!-- Segundos Platos -->
+
+    <string name="s1">Macarrones con salmón</string>
+    <string name="s2">Empanadillas de ajoarriero</string>
+    <string name="s3">Pizza de pera, panceta y salchicha </string>
+    <string name="s4">Filetes de redondo y coles de Bruselas</string>
+    <string name="s5">Bacalao asado con salsa de txakoli</string>
+    <string name="s6">Conejo al horno </string>
+    <string name="s7">Albóndigas en salsa</string>
+    <string name="s8">Filetes de pavo empanados</string>
+    <string name="s9">Jabalí estofado </string>
+    <string name="s10">Morros picantes </string>
+
+    <!-- Segundos Platos -->
+
+    <string name="pos1">Chocolate con churros de café</string>
+    <string name="pos2">Natillas con churros</string>
+    <string name="pos3">Copa de mango y chocolate blanco</string>
+    <string name="pos4">Pudin de brioche y fruta</string>
+    <string name="pos5">Quesada con mermelada de albaricoque</string>
+    <string name="pos6">Tarta Sacher con mermelada</string>
+    <string name="pos7">Flan de huevo</string>
+    <string name="pos8">Torrija caramelizada</string>
+    <string name="pos9">Flan de turrón </string>
+    <string name="pos10">Bizcocho de chocolate sin gluten</string>
+
     <!-- Principal App -->
 
-    <string name="app_name">APP_Restaurante</string>
+    <string name="app_name">RestaurantApp</string>
     <string name="title_activity_menu_principal">MenuPrincipalActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -27,4 +53,7 @@
     <string name="title_activity_maps">Map</string>
     <string name="title_activity_carrito">CarritoActivity</string>
     <string name="title_activity_primeros">PrimerosActivity</string>
+    <string name="title_activity_segundos">SegundosActivity</string>
+    <string name="title_activity_postres">PostresActivity</string>
+    <string name="title_activity_cafe">CafeActivity</string>
 </resources>
