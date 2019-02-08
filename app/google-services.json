@@ -1,35 +1,35 @@
 {
   "project_info": {
-    "project_number": "580467274378",
-    "firebase_url": "https://restaurantapp-e1d22.firebaseio.com",
-    "project_id": "restaurantapp-e1d22",
-    "storage_bucket": "restaurantapp-e1d22.appspot.com"
+    "project_number": "212336013486",
+    "firebase_url": "https://restauranteapp-8cc78.firebaseio.com",
+    "project_id": "restauranteapp-8cc78",
+    "storage_bucket": "restauranteapp-8cc78.appspot.com"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:580467274378:android:5eeb24a5043e2de1",
+        "mobilesdk_app_id": "1:212336013486:android:c7d9060e73ddc9c4",
         "android_client_info": {
-          "package_name": "com.example.dani.restaurantapp"
+          "package_name": "com.example.dani.app_restaurante"
         }
       },
       "oauth_client": [
         {
-          "client_id": "580467274378-2sght4k72vksaipfqgau0ud5lqj7hsho.apps.googleusercontent.com",
+          "client_id": "212336013486-aaud9r06vs3tni2m25eq0h7ivas09av7.apps.googleusercontent.com",
           "client_type": 1,
           "android_info": {
-            "package_name": "com.example.dani.restaurantapp",
+            "package_name": "com.example.dani.app_restaurante",
             "certificate_hash": "18a0cfca1a2f01eda5c1276125a748e844862a38"
           }
         },
         {
-          "client_id": "580467274378-u6vjad8ua5rej7tcfbddd2dvhfi0fcu1.apps.googleusercontent.com",
+          "client_id": "212336013486-3ulmbc1th5qpbeb7fcq22h342006diet.apps.googleusercontent.com",
           "client_type": 3
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyBzXv8yRSniP8Wz7GwdFUTqPuFd_OB5SAI"
+          "current_key": "AIzaSyAWVE9Xb30T7UcF5Si8puuTfkjjRei2Vpw"
         }
       ],
       "services": {
@@ -40,7 +40,7 @@
           "status": 2,
           "other_platform_oauth_client": [
             {
-              "client_id": "580467274378-u6vjad8ua5rej7tcfbddd2dvhfi0fcu1.apps.googleusercontent.com",
+              "client_id": "212336013486-3ulmbc1th5qpbeb7fcq22h342006diet.apps.googleusercontent.com",
               "client_type": 3
             }
           ]

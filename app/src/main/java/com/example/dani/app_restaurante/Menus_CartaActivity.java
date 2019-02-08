@@ -77,6 +77,15 @@ public class Menus_CartaActivity extends AppCompatActivity
                 startActivity(intent);
             }
         });
+
+        CardView cafe = (CardView) findViewById(R.id.card_Cafe);
+        cafe.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(Menus_CartaActivity.this, CafeActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

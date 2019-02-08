@@ -12,14 +12,24 @@ import android.widget.EditText;
 import android.widget.Toast;
 
 
+
 public class RegistroActivity extends AppCompatActivity {
 
+    public String email;
+    public String passwd1;
+    public String passwd2;
+    public String tel;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_registro);
+
+        email = findViewById(R.id.email).toString();
+        passwd1 = findViewById(R.id.pasword).toString();
+        passwd2 = findViewById(R.id.pasword2).toString();
+        tel = findViewById(R.id.tel).toString();
 
         findViewById(R.id.registrarse).setOnClickListener(new View.OnClickListener() {
             @Override

@@ -26,7 +26,7 @@
     <string name="s9">Jabalí estofado </string>
     <string name="s10">Morros picantes </string>
 
-    <!-- Segundos Platos -->
+    <!-- Postres -->
 
     <string name="pos1">Chocolate con churros de café</string>
     <string name="pos2">Natillas con churros</string>
@@ -38,6 +38,16 @@
     <string name="pos8">Torrija caramelizada</string>
     <string name="pos9">Flan de turrón </string>
     <string name="pos10">Bizcocho de chocolate sin gluten</string>
+
+    <!-- Cafe -->
+
+    <string name="c1">Café cortado</string>
+    <string name="c2">Café moka</string>
+    <string name="c3">Café</string>
+    <string name="c4">Café suizo</string>
+    <string name="c5">Chocolate</string>
+    <string name="c6">Leche</string>
+
 
     <!-- Principal App -->
 

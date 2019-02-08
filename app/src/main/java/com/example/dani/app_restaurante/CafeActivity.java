@@ -12,6 +12,9 @@ import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.ImageView;
+
+import com.bumptech.glide.Glide;
 
 public class CafeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
@@ -31,6 +34,26 @@ public class CafeActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        // cargar imagenes con glide
+        ImageView p1 = findViewById(R.id.img1);
+        Glide.with(this).load(R.drawable.cafe_cortado).into(p1);
+
+        ImageView p2 = findViewById(R.id.img2);
+        Glide.with(this).load(R.drawable.cafe_moka).into(p2);
+
+        ImageView p3 = findViewById(R.id.img3);
+        Glide.with(this).load(R.drawable.cafe_solo).into(p3);
+
+        ImageView p4 = findViewById(R.id.img4);
+        Glide.with(this).load(R.drawable.cafe_suizo).into(p4);
+
+        ImageView p5 = findViewById(R.id.img5);
+        Glide.with(this).load(R.drawable.chocolate).into(p5);
+
+        ImageView p6 = findViewById(R.id.img6);
+        Glide.with(this).load(R.drawable.leche).into(p6);
+
     }
 
     @Override
