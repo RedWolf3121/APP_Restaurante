@@ -31,12 +31,7 @@ public class RegistroActivity extends AppCompatActivity {
         passwd2 = findViewById(R.id.pasword2).toString();
         tel = findViewById(R.id.tel).toString();
 
-        findViewById(R.id.registrarse).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-            }
-        });
 
     }
 }

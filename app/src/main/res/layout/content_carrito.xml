@@ -9,6 +9,71 @@
     tools:context=".CarritoActivity"
     tools:showIn="@layout/app_bar_carrito"
     android:orientation="vertical">
-    
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
 
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Menu Seleccionado"
+                android:textColor="@color/negro"
+                android:gravity="center"
+                android:layout_marginTop="25dp"
+                android:textStyle="bold"/>
+
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:text="Nombre Producto"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="Cantidad"/>
+
+            </TableRow>
+            <TableRow
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="15dp"
+                android:layout_marginTop="30dp">
+
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="4"
+                    android:layout_height="match_parent"
+                    android:text="Total"
+                    android:paddingLeft="35dp"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1"
+                    android:layout_height="match_parent"
+                    android:text="20€"
+                    android:textStyle="bold"/>
+
+            </TableRow>
+
+            <ImageButton
+                android:layout_width="64dp"
+                android:layout_height="64dp"
+                android:src="@drawable/pay_icon"
+                android:layout_gravity="end"
+                android:layout_margin="25dp"
+                android:background="@android:color/transparent"/>
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

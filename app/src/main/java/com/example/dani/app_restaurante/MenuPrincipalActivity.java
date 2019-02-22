@@ -34,8 +34,8 @@ public class MenuPrincipalActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        CardView ejercicios = (CardView) findViewById(R.id.card_menus);
-        ejercicios.setOnClickListener(new View.OnClickListener() {
+        CardView Carta = (CardView) findViewById(R.id.card_menus);
+        Carta.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuPrincipalActivity.this, Menus_CartaActivity.class);
@@ -47,6 +47,14 @@ public class MenuPrincipalActivity extends AppCompatActivity
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MenuPrincipalActivity.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+        CardView carrito = (CardView) findViewById(R.id.card_carrito);
+        carrito.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(MenuPrincipalActivity.this, CarritoActivity.class);
                 startActivity(intent);
             }
         });

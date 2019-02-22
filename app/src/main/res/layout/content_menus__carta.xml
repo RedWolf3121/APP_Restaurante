@@ -34,9 +34,7 @@
                     android:id="@+id/primero"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"/>
+                    android:scaleType="centerCrop" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -61,9 +59,7 @@
                     android:id="@+id/segundo"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"/>
+                    android:scaleType="centerCrop" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -88,9 +84,7 @@
                     android:id="@+id/postre"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"/>
+                    android:scaleType="centerCrop" />
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
@@ -118,9 +112,7 @@
                     android:id="@+id/cafe"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    android:scaleType="centerCrop"
-                    android:paddingTop="8dp"
-                    android:paddingBottom="8dp"/>
+                    android:scaleType="centerCrop"/>
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="30dp"
